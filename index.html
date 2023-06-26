@@ -1,27 +1,565 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech - FinGuru</title>
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Finguru - Fintech FIAP</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    <!-- BOOTSTRAP CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
     crossorigin="anonymous">
 
+    <!-- PERSONAL CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
 </head>
 
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    <!-- HEADER -->
+    <header class="container ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand logo-text">
+                    <img src="./assets/images/FinGuru/FinGuru.png" alt="logo Finguru" class="header-logo">
+                    Finguru
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-lable="Toggle navigation">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#valores" class="nav-link">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#vantagens" class="nav-link">Vantagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#equipe" class="nav-link">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- ABOUT SECTION -->
+    <section class="container mt-5 sobre" id="sobre">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <h2 class="my-title display-5 my-5">
+                    O controle financeiro que você merece!
+                </h2>
+                <h3 class="mb-4 my-title">
+                    Descubra como gerenciar suas finanças de forma fácil e prática. Tenha uma visão ampla do seu orçamento e melhore sua saúde financeira. Experimente agora!
+                </h3>
+                <div class="d-flex flex-column">
+                    <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" 
+                    data-bs-target="#loginModal">
+                        Login
+                        <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                    </a>
+                    <a href="#" class="my-4" data-bs-toggle="modal" 
+                    data-bs-target="#newAccont">Ainda não tem uma conta? Clique aqui!</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="./assets/images/FinGuru/FinGuru.png" alt="imagem 1" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+        <!-- LOGIN MODAL -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalTitle"
+        aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-3" id="loginModalTitle">Login</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="mb-3">Bem vindo ao FinGuru</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="ieInputEmail" aria-describedby="emailHelp" placeholder="seu_email@email.com">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control mb-3" id="inputPassword">
+                                <a href="#" class="py-4" data-bs-toggle="modal">
+                                    Esqueceu a senha? Clique aqui!
+                                </a>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGIN MODAL END -->
+
+        <!-- ACCOUNT MODAL -->
+        <div class="modal fade" id="newAccont" tabindex="-1" aria-labelledby="newAccountTitle"
+        aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-3" id="loginModalTitle">Create Account</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="mb-3 fs-4">Preencha os campos com seus dados</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="newName" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="newName" 
+                                aria-describedby="emailHelp" placeholder="Seu Nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail2" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail2" 
+                                aria-describedby="emailHelp" placeholder="seu_email@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confimEmail" class="form-label">Confirmar Email</label>
+                                <input type="email" class="form-control" id="confimEmail" 
+                                aria-describedby="emailHelp" placeholder="seu_email@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Senha</label>
+                                <input type="password" class="form-control mb-3" id="inputPassword">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Confirmar Senha</label>
+                                <input type="password" class="form-control mb-3" id="inputPassword">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <label class="form-check-label" for="check1">
+                                    Concorde com os
+                                </label>
+                                <a href="#" class="py-4" data-bs-toggle="modal">
+                                    Termos de Serviço
+                                </a>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ACCOUNT MODAL END -->
+
+    <!-- REVIEWS -->
+    <section class="container my-2" id="avaliacoes">
+        <h4 class="my-title text-center display-5">Avaliações</h4>
+        <h3 class="text-center my-title mb-4">Veja a opinião dos nossos usuários</h3>
+        <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-star icon"></i>
+            <i class="fa-solid fa-star icon"></i>
+            <i class="fa-solid fa-star icon"></i>
+            <i class="fa-solid fa-star icon"></i>
+            <i class="fa-solid fa-star icon"></i>
+        </div>
+
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-4 my-2 ">
+                <div class="card text-center">
+                    <div class="card-body review">
+                        <h4 class="my-title my3">Jimi Hendrix</h4>
+                        <p class="card-text my-3">
+                            "A interface do app é super amigável e fácil de usar, consegui visualizar 
+                            todas as minhas contas no mesmo lugar e ter uma visão ampla do meu orçamento. 
+                            Adorei!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center">
+                    <div class="card-body  review">
+                        <h4 class="my-title my3">Freddie Mercury</h4>
+                        <p class="card-text my-3">
+                            "Usar a fintech me ajudou a poupar e economizar dinheiro, recomendo para todo 
+                            mundo!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2 review">
+                <div class="card text-center">
+                    <div class="card-body review">
+                        <h4 class="my-title my3">Mick Jagger</h4>
+                        <p class="card-text my-3">
+                            "Antes da fintech eu não tinha noção nenhuma de como administrar meu 
+                            dinheiro, mas depois de usar a ferramenta, fiquei muito mais organizado!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- REVIEWS END -->
+
+    <!-- VALUES -->
+    <section class="container my-5" id="valores">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 bg-finguru-2 m-0 pe-0">
+                <h4 class="my-1 my-title mt-4 fs-2">Valores</h4>
+                <h4 class="my-title my-4 mx-2">
+                    Transforme suas finanças, conquiste a liberdade com FinGuru!
+                </h4>
+                <p class="mb-5 mx-2">
+                    A FinGuru é uma fintech que valoriza a transparência, simplicidade e empoderamento 
+                    financeiro. Com inovação, segurança e personalização, buscamos educar nossos usuários 
+                    e fornecer suporte excepcional, capacitando-os a transformar suas finanças e 
+                    conquistar a liberdade financeira desejada.
+                </p>
+
+            </div>
+            <div class="col-lg-6 text-center m-0 p-0">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/valores/valores2.jpg" alt="guardar dinheiro" 
+                            class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/valores/valores1.jpg" alt="felicidade financeira" 
+                            class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- VALUES END -->
+
+    <!-- ADVANTAGE -->
+    <section class="container my-5 advantage" id="vantagens">
+        <h4 class="my-title text-center my-mt display-5">Vantagens</h4>
+        <h3 class="text-center my-title mb-4">Veja as vantagens de utilizar nosso aplicativo</h3>
+
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Simplicidade</h5>
+                        <p class="card-text">
+                            Gerencie suas despesas de forma simples e eficiente, tenha uma visão clara de 
+                            onde seu dinheiro está sendo gasto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-money-bill-trend-up icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Gerenciamento</h5>
+                        <p class="card-text">
+                            Organize suas dívidas, crie estratégias de pagamento e acompanhe seu 
+                            progresso rumo à liberdade financeira.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-shield-halved icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Segurança</h5>
+                        <p class="card-text">
+                            Segurança dos dados financeiros e informações protegidas contra ameaças e invasões indesejadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-coins icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Personalização</h5>
+                        <p class="card-text">
+                            Crie um orçamento personalizado, receba insights valiosos e tome decisões 
+                            informadas para uma vida financeira equilibrada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-scale-balanced icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Controle</h5>
+                        <p class="card-text">
+                            Receba alertas personalizados, lembretes de contas a pagar e insights 
+                            relevantes para manter suas finanças sob controle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-piggy-bank icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Alcance Objetivos</h5>
+                        <p class="card-text">
+                            Defina metas financeiras, acompanhe seu progresso e receba orientações 
+                            personalizadas para atingir seus objetivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ADVANTAGE END -->
+
+    <!-- TEAM -->
+    <section class="container my-5" id="equipe">
+        <h4 class="my-title text-center my-mt display-5">Equipe</h4>
+        <h3 class="text-center my-title mb-4">Conheça o nosso time</h3>
+
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./assets/images/equipe/john.png" alt="employee 1" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3">John Lennon</h4>
+                        <p class="card-text my-3">
+                            Desenvolvedor backend habilidoso, especializado em construir 
+                            sistemas robustos e escaláveis, garantindo a funcionalidade perfeita e a 
+                            eficiência das aplicações.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#"><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook icon-social mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./assets/images/equipe/paul.png" alt="employee 2" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3">Paul McCartney</h4>
+                        <p class="card-text my-3">
+                            Front-end Developer criativo, transforma designs em interfaces interativas, 
+                            proporcionando experiências visuais envolventes e intuitivas.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#"><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook icon-social mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./assets/images/equipe/ringo.png" alt="employee 3" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3"> Ringo Starr</h4>
+                        <p class="card-text my-3">
+                            UI/UX Designer apaixonado por criar interfaces intuitivas, unindo estética e 
+                            usabilidade para proporcionar experiências excepcionais aos usuários.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#"><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook icon-social mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./assets/images/equipe/george.png" alt="employee 4" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3"> George Harrison</h4>
+                        <p class="card-text my-3">
+                            Tester meticuloso, garante a qualidade do software através de testes 
+                            rigorosos, identificando e resolvendo problemas para uma experiência livre de 
+                            falhas.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#"><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook icon-social mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- TEAM END -->
+
+    <!-- CONTACT -->
+    <section class="container-fluid bg-finguru-2 mt-5" id="contato">
+        <div class="container py-5">
+            <h4 class="my-title text-center display-6">Contato</h4>
+            <h3 class="text-center my-title mb-4">Veja como você pode falar conosco</h3>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 my-4 text-center">
+                            <p><i class="fa-solid fa-location-dot icon-contato"></i></p>
+                            <h3>Endereço</h3>
+                            <p>
+                                Av. Stairway To Heaven, 1001 <br>
+                                São Paulo - SP
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p><i class="fa-solid fa-phone icon-contato"></i></p>
+                            <h3>Telefone</h3>
+                            <p>
+                                (11) 0000-0000 <br>
+                                (11) 11111-1111
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p><i class="fa-solid fa-envelope icon-contato"></i></p>
+                            <h3>Email</h3>
+                            <p>
+                                helpcenter@finguru.com.br <br>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p><i class="fa-solid fa-clock icon-contato"></i></p>
+                            <h3>Atendimento</h3>
+                            <p>
+                                Segunda - Sexta<br>
+                                07:00 - 19:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="row text-start">
+                            <div class="col-lg-6 my-2">
+                                <label for="nome" class="form-label">Seu Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                            </div>
+                            <div class="col-lg-6 my-2">
+                                <label for="email" class="form-label">Seu email</label>
+                                <input type="email" class="form-control" id="email"
+                                placeholder="Seu email">
+                            </div>
+                            <div class="col-lg-6 my-2">
+                                <label for="fone" class="form-label">Seu Telefone</label>
+                                <input type="tel" class="form-control" id="fone"
+                                placeholder="(xx) 9999-9999">
+                            </div>
+                            <div class="col-lg-6 my-2">
+                                <label for="assunto" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="assunto"
+                                placeholder="Assunto">
+                            </div>
+                            <div class="col-lg-12 my-2">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea name="mensagem" class="form-control" id="mensagem"
+                                placeholder="Sua mensagem"></textarea>
+                            </div>
+
+                            <div class="col-lg-12 my-2 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- CONTACT END -->
+
+
+    <!-- BOOTSTRAP JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+    <!-- PERSONAL JS -->
+
 </body>
 
 </html>

@@ -1,17 +1,135 @@
-/* ----------------------------início do reset------------------------ */
+/* --------------------------------- SCROL BAR --------------------------------- */
+body::-webkit-scrollbar {
+    width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+background: var(--bg-finguru-2);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: var(--bg-finguru-1);    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 3px solid white;  /* creates padding around scroll thumb */
+}
+/* ------------------------------- SCROL BAR END ------------------------------- */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-/* html {
-    font-size: 62.5%;
+a {
+    color: var(--bg-finguru-1);
 }
 
-body{
-    font-size: 1.6rem;
-} */
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--bg-finguru-4);
+}
 
-/* ----------------------------Fim do reset------------------------ */
+.header-logo {
+    max-width: 4rem;
+    margin-right: 1rem;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-finguru-1);
+    font-weight: 800;
+}
+
+.logo-icon {
+    color: var(--bg-finguru-1);
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+.nav-item a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--bg-finguru-1);
+}
+
+.nav-item a:hover {
+    color: var(--bg-finguru-4);
+}
+
+
+
+.my-title {
+    color: var(--bg-finguru-1);
+}
+
+.bg-finguru-2 {
+    background-color: var(--bg-finguru-2);
+}
+
+.sobre {
+    min-height: 55vh;
+    display: flex;
+}
+
+.review {
+    height: 15rem;
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--bg-finguru-1);
+    margin: 24px 0;
+    transition: .5s;
+}
+
+#avaliacoes .icon {
+    font-size: 2rem;
+}
+
+.carouseil-inner img {
+    width: 60rem;
+    height: 40rem;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    background-color: var(--bg-finguru-2);
+}
+
+.advantage .card:hover {
+    background-color: var(--bg-finguru-5);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+    color: var(--bg-finguru-4);
+}
+
+.icon-social,
+.icon-contato {
+    font-size: 2rem;
+    color: var(--bg-finguru-1);
+    transition: .3s;
+}
+
+.icon-social:hover {
+    color: var(--bg-finguru-4);
+}
+
+.btn-primary {
+    background-color: var(--bg-finguru-1);
+    border-color: var(--bg-finguru-1);
+}
+
+.btn-primary:hover {
+    background-color: var(--bg-finguru-4);
+    border-color: var(--bg-finguru-4);
+}
+
+textarea {
+    resize: none;
+    height: 9rem;
+}
