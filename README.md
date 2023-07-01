@@ -20,9 +20,8 @@ FinGuru é uma fintech que oferece uma plataforma de controle financeiro pessoal
 # Páginas
 
 Home:
-<a href="https://lucasfmerino.github.io/fiap_04_fintech/">https://lucasfmerino.github.io/cf_web_calculator/index.html</a>
-<br>
+<a href="https://lucasfmerino.github.io/fiap_04_fintech/">https://lucasfmerino.github.io/fiap_04_fintech/
 <br>
 
 Painel de Controle:
-<a href="https://lucasfmerino.github.io/fiap_04_fintech/assets/pages/panel.html">https://lucasfmerino.github.io/cf_web_calculator/index.html</a>
+<a href="https://lucasfmerino.github.io/fiap_04_fintech/assets/pages/panel.html">https://lucasfmerino.github.io/fiap_04_fintech/assets/pages/panel.html</a>
