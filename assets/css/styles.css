@@ -133,3 +133,14 @@ textarea {
     resize: none;
     height: 9rem;
 }
+
+
+/* PANEL */
+
+
+#welcome img, #controle img {
+    max-width: 25rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+

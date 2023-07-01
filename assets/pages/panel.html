@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech - FinGuru</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous">
+
+    <!-- PERSONAL CSS -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="container ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand logo-text">
+                    <img src="../images/FinGuru/FinGuru.png" alt="logo Finguru" class="header-logo">
+                    Finguru
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-lable="Toggle navigation">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Painel de controle</a>
+                        </li>
+
+                        <li class="nav-item dropdown px-4">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                Explorar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" 
+                                    data-bs-target="#caseModal1">
+                                        Receita
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" 
+                                    data-bs-target="#caseModal1">
+                                        Gastos
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li><li>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" 
+                                    data-bs-target="#caseModal1">
+                                        Metas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Configurações</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- WELCOME SECTION -->
+    <section class="container my-5" id="welcome">
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-6 text-center m-0 p-0">
+                <img src="../images/user_area/finance2.png" alt="">
+            </div>
+
+            <div class="col-lg-6 bg-finguru-2 m-0 pe-0">
+                <h4 class="my-1 my-title mt-4 fs-2">Bem vindo, "Usuário"!</h4>
+                <h4 class="my-title my-4 mx-2">
+                    Aqui você tem o total controle das suas finanças!
+                </h4>
+                <p class="mb-5 mx-2">
+                    Para alcançar uma saúde financeira sólida, comece por criar um orçamento realista. 
+                    Registre todas as suas receitas e despesas, identificando áreas onde você pode 
+                    reduzir gastos. Priorize o pagamento de dívidas e estabeleça metas financeiras de 
+                    curto e longo prazo. Lembre-se, pequenas mudanças diárias 
+                    podem ter um grande impacto ao longo do tempo.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center p-2">
+            <h2 class="my-title mt-5"> Resumo diário </h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Finanças</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Receita total</th>
+                        <td>R$ 8.765,67</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gasto total</th>
+                        <td>R$ 5.732,85</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saldo total</th>
+                        <td colspan="2">R$ 3.032,82</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <!-- WELCOME SECTION END -->
+
+    <!-- MAIN SECTION -->
+    <section class="container my-5" id="carteira">
+        <h2 class="my-title text-center my-mt display-5">Minha Carteira</h2>
+        <h4 class="text-center my-title mb-4">Acesse, personalize e mantenha suas finanças organizadas!</h4>
+
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="../images/user_area/receitas.png" alt="receitas" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3">Receitas</h4>
+                        <p class="card-text my-3">
+                            Descubra novas fontes de renda, aprenda a investir e potencialize seus ganhos 
+                            para alcançar a prosperidade financeira desejada.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary">Acesse</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="../images/user_area/gastos.png" alt="gastos" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3">Gastos</h4>
+                        <p class="card-text my-3">
+                            Tenha o controle total das suas despesas, identifique oportunidades de 
+                            economia e mantenha suas finanças equilibradas.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary">Acesse</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="../images/user_area/metas.png" alt="metas" 
+                    class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="my-title my3">Metas</h4>
+                        <p class="card-text my-3">
+                            Defina objetivos financeiros claros, acompanhe seu progresso e conquiste a 
+                            liberdade financeira que você sempre desejou.
+                        </p>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary">Acesse</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- MAIN SECTION END -->
+
+    <!-- INSIGHTS SECTION -->
+    <section class="container my-5 bg-finguru-2" id="controle">
+        <h2 class="my-title text-center my-mt display-5">Controle</h2>
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-lg-6 bg-finguru-2 m-0 pe-0">
+                <h4 class="my-1 my-title mt-4 fs-2">Domine suas finanças com insights e gráficos poderosos!</h4>
+                <p class="my-5 mx-2">
+                    Bem-vindo à seção de controle financeiro! Aqui, você terá acesso a insights valiosos 
+                    e gráficos poderosos que irão ajudá-lo a dominar suas finanças. Acompanhe seu 
+                    progresso, identifique áreas de melhoria e tome decisões informadas para alcançar 
+                    estabilidade e prosperidade financeira.
+                </p>
+                <div class="mt-5 d-flex justify-content-center ">
+                    <a href="#" class="btn btn-primary">Acesse</i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center m-0 p-0">
+                <img src="../images/user_area/finance1.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- INSIGHTS SECTION END -->
+
+
+    <!-- BOOTSTRAP JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+    <!-- PERSONAL JS -->
+
+</body>
+
+</html>
