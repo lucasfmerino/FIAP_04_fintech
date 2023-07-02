@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./assets/images/github/fintech_web.png" alt="finguru banner">
+    <img src="./assets/images/github/fintech_web2.png" alt="finguru banner">
 </div>
 <br>
 
